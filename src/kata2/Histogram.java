@@ -26,7 +26,7 @@ public class Histogram<T> {
         Iterator<Map.Entry<T, Integer>> iterator = getHistogram().entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<T, Integer> next = iterator.next();
-            result += next.getKey() + "==>" + next.getValue() + "\n";
+            result += next.getKey() + " ==> " + next.getValue() + "\n";
         }
         return result;
     }
